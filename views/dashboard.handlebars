@@ -1,0 +1,29 @@
+<div>
+    <h2>Create New Post!</h2>
+</div>
+
+<form>
+    <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Title</span>
+        <input type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm">
+    </div>
+
+    <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Text</span>
+        <input type="text" class="form-control" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <button type="submit" class="btn">Post</button>
+</form>
+{{#if posts.length}}
+<h2>Posts!</h2>
+<ol>
+    {{#each posts as |post|}}
+    <li>
+        {{> post-info post}}
+        <a href="/dashboard/edit/{{post.id}}">Edit</a>
+    </li>
+    {{/each}}
+</ol>
+{{/if}}
