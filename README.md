@@ -8,22 +8,32 @@
 
 - [Description](#description)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Contribution](#contribution)
 - [Testing](#testing)
 - [Additional Info](#additional-info)
   
 ## Description:
 
+This is a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.
+The app will follow the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
+
 ## Deployed Application:
  
 ## Installation:
 
-  - 
+  - npm install express-handlebars
   
-## Usage:
-
-  - 
+  - npm install --save mysql2
+  
+  - npm i sequelize
+  
+  - npm i dotenv
+  
+  - npm i bcrypt
+  
+  - npm i express-session
+  
+  - npm i connect-session-sequelize
   
 ## Contribution: 
 
